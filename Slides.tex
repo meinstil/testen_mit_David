@@ -1,0 +1,262 @@
+\documentclass[large]{beamer}
+
+\mode<presentation>
+%\mode<handout>
+{
+  \usetheme{Malmoe}
+  \usecolortheme{default}
+  
+  % Malmoe WITH default / seagull / [named=COLOR]{structure}
+  % Dresden WITH default / dove / 
+}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{theorem}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{colordvi}
+\usepackage{xcolor}
+
+%\usepackage{tabularx}
+%\usepackage{booktabs}
+%\usepackage{dcolumn}
+%\usepackage{paralist}
+%\setbeamertemplate{itemize item}[default]
+
+%\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+
+\title[SHORT TITLE]{TITLE}
+
+%\subtitle
+%{Include Only If Paper Has a Subtitle}
+
+\author[SHORT AUTHORS] % (optional, use only with lots of authors)
+{
+	LONG AUTHOR\inst{1} \and 
+	LONG AUTHOR\inst{2}}
+% - Give the names in the same order as the appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[] % (abreviation of university if only one)
+{
+  \inst{1} UNIVERSITY \and 
+  \inst{2} UNIVERSITY % \\ some more info 
+}
+
+\date[MFM 2017] % (OPTIONAL, should be abbreviation of conference name)
+{ \\[5pt]
+Macroeconomic Financial Modeling (MFM) and Macroeconomic Fragility Conference \\[5pt]
+PLACE -- DATE}
+
+% - Either use conference name or its abbreviation.
+% - Not really informative to the audience, more for people (including
+%   yourself) who are reading the slides online
+
+\titlegraphic{\includegraphics[width=2.8cm]{Abbildung/logo}} % single author place in institute
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Introduction}
+%
+\subsection{Motivation and Summary}
+%
+\begin{frame}{some nice title}
+
+beautiful figure 
+
+\end{frame}
+%
+\begin{frame}{some further title}
+
+Securities Exchange Act had three purposes (Kupiec, 1998)
+\begin{itemize}
+\item reduction of ``excessive'' credit in securities transactions
+\item protection of buyers from too much leverage
+\item reduction of stock market volatility
+\end{itemize}
+
+\bigskip
+
+Securities Exchange Act of 1934 granted the Federal Reserve Board\\
+
+\bigskip
+
+FRB pursued active margin policy between 1947 and 1974
+
+\end{frame}
+%
+\begin{frame}{U.S.\ Regulation T}
+
+another figure 
+
+\end{frame}
+%
+\begin{frame}{Effects of Regulation T}
+
+Kupiec (1998) quote\\
+
+\begin{quote}
+{ Margin requirements were ineffective as selective credit controls, inappropriate as rules for investor protection, and were unlikely to be useful in control\-
+ling stock price volatility.}
+\end{quote}
+
+\bigskip
+
+Fortune (2001)\\
+
+\begin{quote}
+{The literature evaluating the effects of Regulation T does provide some evidence that margin requirements affect stock price performance, but the evidence is mixed and it is not clear that the statistical significance found trans\-lates to an economically significant case for an active margin policy.}
+\end{quote}
+
+\end{frame}
+
+%
+\section{The Economic Model}
+%
+\subsection{Infinite-horizon Economy}
+%
+\begin{frame}{Model: Physical Economy}
+
+Infinite-horizon exchange economy in discrete time, $t=0,1,2,\ldots$
+
+\bigskip
+
+Finite number $S$ of i.i.d.\ shocks, $s=1,2,\ldots,S$
+
+\bigskip
+
+History of shocks $s^t =(s_0,s_1,\ldots,s_t)$, called date-event
+
+\bigskip
+
+Single perishable consumption good
+
+\bigskip
+
+$H=2$ types of agents, $h=1,2$, with Epstein-Zin recursive utility
+
+\bigskip
+
+Agent {\color{blue} $h$} receives individual endowment {\color{blue} $e^h(s^t)$} at date-event $s^t$
+
+\end{frame}
+%
+\section{Margin Requirements and Volatility}
+%
+\subsection{Basic Observations}
+%
+\begin{frame}{Collateral Constraints Increase Volatility}
+
+Margin requirement on first asset ${\color{cyan} m_j(s^t)} \equiv 1$, so this asset\\
+\mbox{} \hspace{0.25cm} is non-marginable
+
+\bigskip
+
+Aggregated STD of long-lived asset returns: 7.4\%\\
+\mbox{} \hspace{0.25cm} (without borrowing: 5.3\%)
+
+\bigskip
+
+Aggregated excess return: 5.0\%
+
+\begin{table}[htdb]
+\caption{Asset returns with marginable and non-marginable asset}
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\hline
+Asset & STD & ER \\ \hline
+Non-marginable ($\delta_1 = 0.04$)    &  8.5     &  6.8 \\ \hline
+Marginable ($\delta_2 = 0.07$)       &  7.1     &  4.4  \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\end{frame}
+%
+
+\subsection{Regulation of Margin Requirements}
+%
+\begin{frame}{Regulating the Stock Market}
+
+Regulation T had small (if any) quantitative impact on stock\\
+\mbox{} \hspace{0.25cm}  market volatility (Kupiec 1998, Fortune 2001)
+
+\bigskip
+
+Regulation of ``stock market'' in our model\\[5pt]
+\mbox{} \hspace{0.25cm} Asset 1 regulated with constant ${\color{cyan} m_1(s^t)}$\\[5pt]
+\mbox{} \hspace{0.25cm} Asset 2 unregulated (endogenous margins)
+
+\bigskip
+
+How does asset return volatility react to changes in ${\color{cyan} m_1}$?
+
+\bigskip
+
+{\color{red} Not much!}
+
+\end{frame}
+%
+%
+\section{Conclusion}
+%
+\subsection{Summary}
+%
+\begin{frame}{Assumptions and Limitations}
+
+General equilibrium model ignores institutional details
+
+\bigskip
+
+Technical limitations require
+\begin{itemize}
+\item short-sale constraints on long-lived assets
+\item two types of agents
+\end{itemize}
+
+\bigskip
+
+Countercyclical margins depend on exogenous shock but\\
+\mbox{} \hspace{0.25cm} should depend on price levels instead
+
+\bigskip
+
+\pause
+
+\bigskip
+
+Model provides insights into {\color{red} general equilibrium effects}\\
+\mbox{} \hspace{0.25cm} of {\color{red} margin regulation}
+
+\end{frame}
+%
+\begin{frame}{Summary}
+
+Calibrated general equilibrium infinite-horizon economy with\\
+\mbox{} \hspace{0.25cm} heterogeneous agents and collateral constraints
+
+\begin{itemize}
+\item Collateralized borrowing increases return volatility of long-lived assets
+
+\item Changes of margin requirements (as under Regulation T) have little effect if other long-lived assets are not regulated
+
+\item Spillover effects: If margins on one asset are increased, the volatility of other assets decreases
+
+\item Changes of margin requirements may have strong effects when all markets are regulated
+\end{itemize}
+
+\end{frame}
+%
+\end{document}

@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Motivation and Summary}{2}{0}{1}
+\beamer@sectionintoc {2}{The Economic Model}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Infinite-horizon Economy}{6}{0}{2}
+\beamer@sectionintoc {3}{Margin Requirements and Volatility}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Basic Observations}{7}{0}{3}
+\beamer@subsectionintoc {3}{2}{Regulation of Margin Requirements}{8}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{9}{0}{4}
+\beamer@subsectionintoc {4}{1}{Summary}{9}{0}{4}
