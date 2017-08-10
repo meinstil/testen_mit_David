@@ -1,2 +1,2 @@
 # testen_mit_David
-teste Github mit David in Nordbrücke 
+mein Start in die Welt von Github mit David H aus A. 
